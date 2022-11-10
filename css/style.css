@@ -1,0 +1,172 @@
+/* 공통 스타일 */
+*{margin:0; padding:0;}
+body{font:14px/1.8 "맑은 고딕";
+	color:#222;
+}
+
+a{
+	text-decoration:none;
+	color:#222;
+}
+
+ul{
+	list-style:none;
+}
+
+.hidden{
+	height:0;
+	overflow:hidden;
+}
+
+/* 레이아웃 스타일 */
+
+#wrapper{
+	
+}
+
+header{
+	background:rgba(255,255,255,0.5);
+	/* position:fixed; */
+	/* height:100px; */
+	/* top:0; */
+	/* width:100%; */
+	/* z-index:999; */
+}
+
+nav{
+	/* background:rgba(255,255,255,0.5); */
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	/* position:fixed; */
+	/* top:100px; */
+	/* width:100%; */
+	/* z-index:999; */
+	/* height:50px; */
+}
+	
+.container{
+	background:White;
+	/* position:relative; */
+	/* padding:150px; */
+}
+
+aside{
+	background:pink;
+	right:0;
+	top:50%;
+	transform:translateY(-50%);
+	position:fixed;
+}
+
+footer{
+	border-top:1px solid #ccc;
+	padding:50px;
+	text-align:center;
+}
+
+.content{
+	width:1200px;
+	margin:0 auto;
+	/* border:1px solid red; */
+}
+
+/* header 스타일 */
+
+header h1{
+	text-align:center;
+	font-size:3em;
+}
+
+header p{
+	margin
+}
+
+/* nav 스타일 */
+
+nav ul{
+	overflow:auto;
+}
+
+nav ul li{
+	width:20%;
+	/* border:1px solid blue; */
+	float:left;
+	box-sizing:border-box;
+	padding:10px 0;
+	text-align:center;
+}
+
+nav ul li a{}
+
+/* mainSlide 스타일 */
+
+.mainSlide img{
+	width:100%;
+}
+
+/* section 영역의 공통스타일 */
+ 
+section{
+	padding:50px 0;
+	/* border-bottom:5px solid red; */
+}
+
+section h2,section p{
+	text-align:center;
+}
+
+/* bannerWrap 스타일 */
+
+.bannerWrap ul{
+	/* background:yellow; */
+	overflow:auto;
+}
+
+.bannerWrap ul li{
+	width:24.25%;
+	/* border:1px solid blue; */
+	box-sizing:border-box;
+	overflow:hidden;
+	float:left;
+	margin-left:1%;
+}
+
+.bannerWrap ul li:nth-child(1){
+	margin-left:0;
+}
+
+.bannerWrap ul li a{}
+
+.bannerWrap ul li a img{width:100%;}
+
+/* best-new 스타일 */
+
+.productWrap ul{
+	overflow:auto;
+	margin-top:50px;
+}
+
+.productWrap ul li{
+	width:23.125%;
+	overflow:hidden;
+	box-sizing:border-box;
+	float:left;
+	margin-left:2.5%;
+	margin-bottom:20px;
+}
+
+/* .productWrap ul li:nth-child(1){
+	margin-left:0;
+}	
+.productWrap ul li:nth-child(5){
+	margin-left:0;
+} */
+
+/* 4n+1은 0부터 1칸시작 */
+.productWrap ul li:nth-child(4n+1){
+	margin-left:0;
+}
+
+.productWrap ul li a{}
+
+.productWrap ul li a img{width:100%;}
